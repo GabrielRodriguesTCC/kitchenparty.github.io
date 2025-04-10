@@ -3,32 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login|KitchenParty</title>
-    <link rel="stylesheet" href="style.css">
+    <title>KitchenParty</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="login">
-        <div class="caixa">
-            <img src="img/logo-site.png" alt="">
-            
-            <div class="email">
-                <input type="email" placeholder="Email" required>
-            </div>
-            
-            <div class="senha">
-                <input type="password" placeholder="Senha" required>
-            </div>
-
-            <div class="links">
-                <a href="cadastro.html">Cadastre-se</a>
-                <a href="">Sem acesso</a>
-            </div>
-
-            <div class="entrar">
-                <a href="inicio.html"><input type="submit" value="Entrar"></a>
-            </div>
-
-        </div>
-    </div>
+    <main class="container">
+        <div class="banner"><img src="logo-site.png" alt=""></div>
+        <h1>Pesquise a receita</h1>
+        <form class="search-form">
+            <input type="text" placeholder="Digite o ingrediente" class="search-input">
+            <button class="search-button" type="submit">Buscar</button>
+        </form>
+        <div class="loading"></div>
+        <div class="recipe-list"></div>
+        <div class="recipe-details"></div>
+    </main>
 </body>
+<script src="scripts.js"></script>
 </html>
